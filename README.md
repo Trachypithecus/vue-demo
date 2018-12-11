@@ -3,4 +3,4 @@
 
 
 
-![image](https://github.com/Trachypithecus/vue-demo/blob/master/images/logo.png)
+![image](https://github.com/Trachypithecus/vue-demo/blob/master/images/index.png)
