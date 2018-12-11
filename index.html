@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue登录注册实例</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+        <style media="screen">
+        .hidden {
+            display: none;
+        }
+        </style>
+    </head>
+    <body class="pc">
+        <!-- 主页面 -->
+        <div class="page-passport page">
+            <img src="images/logo.png" class="image-logo">
+            <div class="panel-main">
+                <!-- 登录注册导航 -->
+                <div class="nav-bar">
+                    <a class="nav-item" id="sign-in-tab" href="#sign_in">
+                        <nav class="nav-login-form">登录</nav>
+                    </a>
+                    <a class="nav-item" id="register-tab" href="#register">
+                        <nav class="nav-register-form">注册</nav>
+                    </a>
+                </div>
+                <!-- 登录表单 -->
+                <form class="form form-sign-in hidden" id="sign-in-form">
+                    <div class="form-input-group">
+                        <div class="form-input-field">
+                            <input class="form-input" type="text" name="nickname" autocomplete="on" placeholder="请输入登录昵称">
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input-field">
+                            <input class="form-input" type="password" name="password" autocomplete="off" placeholder="请输入登录密码">
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input-field">
+                            <button class="btn-submit">登录</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- 注册表单 -->
+                <form class="form form-register hidden" id="register-form">
+                    <div class="form-input-group">
+                        <div class="form-label">
+                            <label>昵称</label>
+                            <span class="errmsg hidden">* 昵称已被占用</span>
+                        </div>
+                        <div class="form-input-field">
+                            <input class="form-input" type="text" name="nickname" placeholder="请输入昵称">
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-label">
+                            <label>密码</label>
+                        </div>
+                        <div class="form-input-field">
+                            <input class="form-input" type="password" name="password" autocomplete="off" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="form-input-group law-accepted">
+                        <i class="icon" id="is_law_accepted"></i>
+                        <span>阅读并接受<a class="law" href="javascript:void(0);">《会员协议》</a></span>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input-field">
+                            <button class="btn-submit">注册</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 引入js -->
+        <script src="javascript/jquery-1.12.4.js" charset="utf-8"></script>
+        <script src="javascript/index.js" charset="utf-8"></script>
+    </body>
+</html>
